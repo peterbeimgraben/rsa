@@ -1,7 +1,5 @@
-# rsa
-recurrence structure analysis
-
--------- readme.txt --------------
+# RSA
+Recurrence Sstructure Analysis Toolbox (MATLAB)
 
 How to apply Recurrence Structure Analysis (RSA) toolbox.
 
@@ -58,7 +56,7 @@ sc = hdcluster(y, s, thres);
 
 
 
-References:
+# References:
 
 beim Graben, P. & Hutt, A. (2013). Detecting recurrence domains of
 dynamical systems by symbolic dynamics.
