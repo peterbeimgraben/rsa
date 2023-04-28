@@ -51,7 +51,7 @@ s = rsa(y, ds, pr, 'optim', 'uniform'); % entropy optimization
 One can also change the norm from Euclidian (default) to, e.g., cosine similarity:
 
 ```
-s = rsa(y, ds, pr, 'norm', 'cos'); % default Markov  + cosine similarity
+s = rsa(y, ds, pr, 'norm', 'cosq'); % default Markov  + cosine similarity
 ```
 
 Additionally, in the file `ensemblelorenzepl.m` (lines 44–50), RSA can be applied to an ensemble of time series (e.g., obtained from cutting a long series into short segments, or from multiple realizations of measurements), with optional Hausdorff clustering in state space.
