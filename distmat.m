@@ -8,7 +8,7 @@ function D = distmat(data, varargin)
 %
 % optional:
 % 'norm' : pdist norm string,
-%       'norm' = 'cosq' uses cosine square dissimiliarity,
+%       'norm' = 'cos uses cosine dissimiliarity,
 %       yet 'norm' = 'symbol' makes dist(0,0) = Inf 
 %       for transients in symbolic dynamics
 % 'show' : {0,1} display results
@@ -71,8 +71,8 @@ if strcmpi(g.norm, 'symbol')
 end
 
 % calculate the pairwise distances
-% if 'cosq' invoke by handle
-if strcmpi(g.norm, 'cosq')
+% if 'cos' invoke by handle
+if strcmpi(g.norm, 'cos')
     
     D = pdist(data', @cosq);
     

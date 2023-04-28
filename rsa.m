@@ -11,7 +11,7 @@ function [ s, varargout ] = rsa(data, datasamp, prorange, varargin)
 %
 % optional:
 % 'norm' : pdist norm string,
-%       'norm' = 'cosq' uses cosine square dissimiliarity,
+%       'norm' = 'cos' uses cosine dissimiliarity,
 %       yet 'norm' = 'symbol' makes dist(0,0) = Inf 
 %       for transients in symbolic dynamics
 % 'optim' : optimization algorithm,
@@ -32,7 +32,7 @@ function [ s, varargout ] = rsa(data, datasamp, prorange, varargin)
 % s = rsa(y, ds, pr);
 % s = rsa(y, 100, 100, 'show', 1);
 % s = rsa(y, ds, pr, 'optim', 'uniform');
-% [s, e, u] = rsa(y, ds, pr, 'norm', 'cosine');
+% [s, e, u] = rsa(y, ds, pr, 'norm', 'cos');
 
 % see recgram(), recsymdy(), ballsizes(), distmat()
 

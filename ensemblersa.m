@@ -33,7 +33,7 @@ function [ s, varargout ] = ensemblersa(data, datasamp, prorange, varargin)
 % s = ensemblersa(y, ds, pr);
 % s = ensemblersa(y, ds, pr, 'optim', 'uniform');
 % s = ensemblersa(y, ds, pr, 'cluster', 13.5);
-% [s, e, u] = ensemblersa(y, ds, pr, 'norm', 'cosine');
+% [s, e, u] = ensemblersa(y, ds, pr, 'norm', 'cos');
 
 % see rsa(), hdcluster(), recgram(), recsymdy(), ballsizes(), distmat()
 

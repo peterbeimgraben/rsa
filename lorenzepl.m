@@ -40,7 +40,7 @@ nt = size(y, 2);
 % s = rsa(y, ds, pr, 'show', 1);            % default: Markov optimization
 s = rsa(y, ds, pr);                         % default: Markov optimization
 % s = rsa(y, ds, pr, 'optim', 'uniform');   % entropy optimization          
-% s = rsa(y, ds, pr, 'norm', 'cosq');       % default + cosine similarity
+% s = rsa(y, ds, pr, 'norm', 'cos');        % default + cosine similarity
 
 % plot Lorenz data
 figure
